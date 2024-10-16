@@ -24,6 +24,7 @@ def return_val():
 
 # ex2
 def exercise2():
+    print("aaaa")
     pass
 
 
