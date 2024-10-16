@@ -3,14 +3,24 @@
 import numpy as np
 import matplotlib as plt
 
-
 # Please, remove all the pass in the exercises and substitute them with the expected methods for your functions
 
 
 # ex1
-def exercise1():
-    pass
+def return_val():
+    a = int(input("Insert the first number:"))
+    print("The first chosen value is:",a)
+    b = int(input("Insert the second number:"))
+    print("The second chosen value is:",b)
 
+    if a*b < 1000:
+        product = a*b
+        print(product)
+        return product
+    else:
+        summ = a+b
+        print(summ)
+        return summ
 
 # ex2
 def exercise2():
@@ -70,7 +80,7 @@ def exercise12():
 if __name__ == "__main__":
     print("EXERCISE SET 1")
     print("EX1")
-    exercise1()
+    return_val()
     print("EX2")
     exercise2()
     print("EX3")
