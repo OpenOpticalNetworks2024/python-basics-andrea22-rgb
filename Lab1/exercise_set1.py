@@ -1,4 +1,5 @@
 """Exercise Set 1: Python Basics"""
+from tokenize import endpats
 
 import numpy as np
 import matplotlib as plt
@@ -34,14 +35,24 @@ def exercise3():
 
 
 # ex4
-def exercise4():
-    pass
+def div_by_5():
+    list_ = [ 1 , 2, 3 ,5, 10,7,25,49,90]
+
+    for i in list_:
+        if i % 5 == 0:
+            print(i)
+
+
+
+
 
 
 # ex5
-def exercise5():
-    pass
+def check_name():
+    string_ = "Emma is a good developer. Emma is also a writer"
+    Emma_time = string_.count("Emma")
 
+    print("The word emma is repeated:",Emma_time)
 
 # ex6
 def exercise6():
@@ -87,9 +98,9 @@ if __name__ == "__main__":
     print("EX3")
     exercise3()
     print("EX4")
-    exercise4()
+    div_by_5()
     print("EX5")
-    exercise5()
+    check_name()
     print("EX6")
     exercise6()
     print("EX7")
